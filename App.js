@@ -3,6 +3,8 @@ import React, {useEffect, useState} from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import api from './services/api';
 
+// Precisa-se fazer a consulta Buscar o CEP do TextInput assim que o user clicar no TouchableOpacity
+
 export default function App() {
   const [cep, setCep] = useState();
   const [dados, setdados] = useState();
@@ -20,7 +22,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <TextInput value={cep} onChange={(cep) => setCep(cep)} placeholder="Insira o cep" style={styles.input}/>
+      <TextInput value={cep} onChangeText={(cep) => setCep(cep)} placeholder="Insira o cep" style={styles.input}/>
       <Text style={styles.data}>CEP: {dados?.cep}</Text>
       <TouchableOpacity onPress={Buscar} style={styles.bt}>
         <Text style={styles.text}>Buscar</Text>
