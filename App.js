@@ -31,6 +31,8 @@ export default function App() {
     </View>
   );
 }
+
+// RESTANTE DOS DADOS PREVIAMENTE SEPARADOS:
 /*
 <Text style={styles.data}>LOGRADOURO: {dados?.logradouro}</Text>
 <Text style={styles.data}>BAIRRO: {dados?.bairro}</Text>
@@ -42,6 +44,7 @@ export default function App() {
 <Text style={styles.data}>DDD DE ÁREA: {dados?.ddd}</Text>
 <Text style={styles.data}>SIAFI: {dados?.siafi}</Text>
 **/
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
