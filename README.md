@@ -1,2 +1,2 @@
-# API-Axios-Viacep
-App dinâmico para consultar CEPs com Axios apartir da API Viacep
+# EasyCep
+App dinâmico para consultar CEPs e endereços de todo Brasil 🇧🇷
