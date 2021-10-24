@@ -1,3 +1,4 @@
+import { StatusBar } from "expo-status-bar";
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
@@ -5,13 +6,26 @@ export default StyleSheet.create({
         flex: 1,
         backgroundColor: '#E1E1E1',
         alignItems: 'center',
+        paddingTop: 10, // PARA APP NATIVO: StatusBar.currentHeight,
+        paddingHorizontal: 6,
+
     },
+    qrcode: {
+        width: 40,
+        height: 40,
+    },
+    scrollView: {
+        backgroundColor: 'pink',
+        flex: 1,
+
+      },
     image:{
         width: 250,
         height: 250,
     },
     help:{
-        fontSize: 15,
+        fontFamily: 'Quicksand_300Light',
+        fontSize: 16,
         color: '#184043',
     },
     box: {
@@ -19,7 +33,7 @@ export default StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginTop: 10,
-        marginBottom: 44,
+        marginBottom: 40,
         width: '100%',
         minWidth: 350,
         paddingHorizontal: 8
@@ -45,7 +59,7 @@ export default StyleSheet.create({
     },
     iconSearch:{
         marginLeft: 10,
-        marginRight: 12
+        marginRight: 12,
     },
     iconBottom:{
         justifyContent: 'center',
@@ -54,13 +68,14 @@ export default StyleSheet.create({
     iconBottomQr:{
         justifyContent: 'center',
         alignItems: 'center',
-        marginLeft: 5,
-        marginRight: 3,
+        marginLeft: -5,
+        marginRight: 10,
     },
     searchInput:{
+        fontFamily: 'Quicksand_400Regular',
         height: 44,
         fontSize: 18,
-        width:'100%',
+        width:'80%',
         color: '#FFFFFF'
     },
     searchButton:{
@@ -82,39 +97,42 @@ export default StyleSheet.create({
         elevation: 7,
     },
     searchButtonTitle:{
+        fontFamily: 'Quicksand_500Medium',
         fontSize: 16,
         color: 'white',
         fontWeight: 'bold',
     },
     cepTitle:{
+        fontFamily: 'Quicksand_700Bold',
         fontSize: 36,
         color: '#184043',
         fontWeight: 'bold',
-        marginBottom: 30,
+        marginBottom: 20,
     },
     resultsBox:{
-        fontSize: 23,
-        color: 'black',
         backgroundColor: 'white',
-        width: 270,
-        height: 55,
+        width: '90%',
+        height: 56,
         borderRadius: 10,
-        alignSelf: 'center',
         textAlign: 'center',
         justifyContent: 'center',
         marginBottom: 22,
+        paddingHorizontal: 10,
     },
     results:{
-        fontSize: 23,
+        fontFamily: 'Quicksand_400Regular',
+        fontSize: 20,
+        textAlign: 'center',
     },
     bottomButtonsView:{
         flexDirection: 'row',
+        marginTop: 10,
     },
     roundButton:{
         backgroundColor: '#184043',
         borderRadius: 40,
-        width: 40,
-        height: 40,
+        width: 47,
+        height: 47,
         justifyContent: 'center',
         alignItems: 'center',
         marginRight: 15,
@@ -132,8 +150,8 @@ export default StyleSheet.create({
         flexDirection: 'row',
         backgroundColor: '#184043',
         borderRadius: 40,
-        width: 150,
-        height: 40,
+        width: 160,
+        height: 47,
         justifyContent: 'center',
         alignItems: 'center',
         textAlignVertical: 'center',
@@ -149,6 +167,7 @@ export default StyleSheet.create({
     },
     
     qrText: {
+        fontFamily: 'Quicksand_400Regular',
         color: 'white',
         textAlignVertical: 'center',
         justifyContent: 'center',
