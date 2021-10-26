@@ -1,4 +1,3 @@
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
@@ -8,7 +7,29 @@ export default StyleSheet.create({
         alignItems: 'center',
         paddingTop: 10, // PARA APP NATIVO: StatusBar.currentHeight,
         paddingHorizontal: 6,
+    },
+    qrcodeView:{
+        marginTop: 20,
+        marginBottom: 20,
+    },
+    qrcodeInstruction:{
+        fontFamily: 'Quicksand_300Light',
+        fontSize: 18,
+        color: '#184043',
+        textAlign: 'center',
+        marginBottom: 22,
+        marginTop: 20,
+        marginHorizontal: 50,
 
+    },
+    containerQr: {
+        flex: 1,
+        backgroundColor: '#E1E1E1',
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingTop: 10, // PARA APP NATIVO: StatusBar.currentHeight,
+        paddingHorizontal: 6,
+    
     },
     qrcode: {
         width: 40,
@@ -33,7 +54,7 @@ export default StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginTop: 10,
-        marginBottom: 40,
+        marginBottom: 35,
         width: '100%',
         minWidth: 350,
         paddingHorizontal: 8
